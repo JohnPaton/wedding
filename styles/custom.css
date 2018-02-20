@@ -1,0 +1,144 @@
+
+body {
+    position: relative;
+    background-image: url(/img/pattern.svg);
+}
+
+a{
+    color: inherit;
+    text-decoration: underline;
+}
+
+footer{
+    font-size: x-small;
+}
+
+/*Cards*/
+
+.card{
+    border-radius: 0;
+    border-width: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card .col-sm h5{
+    margin-bottom: -5px;
+}
+
+.card-container{
+    max-width: 960px;
+}
+
+#intros{
+    max-width: 960px;
+    align-content: center;
+}
+
+/*Icons*/
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-family: Flaticon;
+    font-size: inherit;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 0;
+}
+
+.card-icon{
+    float: right;
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+.list-icon{
+    font-size: 50px;
+}
+
+/*Parallax Images*/
+
+.jumbotron{
+    box-shadow: inset 0 -4px 8px rgba(0, 0, 0, 0.2)
+}
+
+.parallax {
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 -4px 8px rgba(0, 0, 0, 0.2);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+#entry{
+    height: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background: url(/img/websize/shot-3.jpg);
+    background-position: 11% 80%;
+}
+
+#img1{
+    height: 85%;
+    background: url(/img/websize/shot-12.jpg);
+    background-position: 50% 25%;
+}
+
+#img2{
+    height: 85%;
+    background: url(/img/websize/shot-31.jpg);
+    background-position: 61% 50%;
+}
+
+#img3{
+    height: 85%;
+    background: url(/img/websize/shot-14.jpg);
+    background-position: 10% 70%;
+}
+
+#img4{
+    height: 85%;
+    background: url(/img/websize/shot-26.jpg);
+    background-position: 53% 60%;
+}
+
+#img5{
+    height: 85%;
+    background: url(/img/websize/shot-29.jpg);
+    background-position: 50% 45%;
+}
+
+
+
+/*Navigation */
+
+.anchor{
+    display: block;
+    position: relative;
+    top: -75px;
+    visibility: hidden;
+}
+
+.navbar{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+/*Form*/
+.form-group {
+    vertical-align: middle;
+}
+
+.custom-control {
+  display: table;
+  vertical-align: middle;
+}
+
+
+.custom-control-input {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      top:0;
+    }
