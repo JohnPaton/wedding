@@ -76,7 +76,7 @@ footer{
 }
 
 #entry{
-    height: 100%;
+    height: 100vh;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-attachment: fixed !important;
@@ -85,31 +85,31 @@ footer{
 }
 
 #img1{
-    height: 85%;
+    height: 85vh;
     background: url(/img/websize/shot-12.jpg);
     background-position: 50% 25%;
 }
 
 #img2{
-    height: 85%;
+    height: 85vh;
     background: url(/img/websize/shot-31.jpg);
     background-position: 61% 50%;
 }
 
 #img3{
-    height: 85%;
+    height: 85vh;
     background: url(/img/websize/shot-14.jpg);
     background-position: 10% 70%;
 }
 
 #img4{
-    height: 85%;
+    height: 85vh;
     background: url(/img/websize/shot-26.jpg);
     background-position: 53% 60%;
 }
 
 #img5{
-    height: 95%;
+    height: 95vh;
     background: url(/img/websize/shot-29.jpg);
     background-position: 50% 45%;
 }
