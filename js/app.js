@@ -1,3 +1,10 @@
+// Under contruction message
+var constructionAlert = "<div class=\"alert alert-danger show mt-5\" role=\"alert\">"
+    + "<strong>This page is still under construction.</strong> It may contain bugs and/or errors. Don't take the info seriously!"
+    + "</div>"
+
+$('.container-fluid .anchor').after(constructionAlert)
+
 // Smooth scrolling
 // https://www.w3schools.com/bootstrap/bootstrap_ref_js_scrollspy.asp
 // Add smooth scrolling on all links inside the navbar on desktop
