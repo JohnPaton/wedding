@@ -1,4 +1,4 @@
-
+/*General*/
 body {
     position: relative;
     background-image: url(/img/pattern.svg);
@@ -13,8 +13,17 @@ footer{
     font-size: x-small;
 }
 
-/*Cards*/
+.textlist{
+    padding-top: 0.5em;
+    list-style: none;
+    text-indent: -1.1em;
+}
 
+.textlist li{
+    margin-bottom: 0.5em;
+}
+
+/*Cards*/
 .card{
     border-radius: 0;
     border-width: 0;
@@ -55,7 +64,6 @@ footer{
 }
 
 /*Parallax Images*/
-
 .jumbotron{
     box-shadow: inset 0 -4px 8px rgba(0, 0, 0, 0.2)
 }
@@ -101,7 +109,7 @@ footer{
 }
 
 #img5{
-    height: 85%;
+    height: 95%;
     background: url(/img/websize/shot-29.jpg);
     background-position: 50% 45%;
 }
@@ -109,7 +117,6 @@ footer{
 
 
 /*Navigation */
-
 .anchor{
     display: block;
     position: relative;
@@ -125,20 +132,6 @@ footer{
     text-decoration: none;
 }
 
-/*Form*/
-.form-group {
-    vertical-align: middle;
+.lang-link{
+    /*just an identifier for jquery*/
 }
-
-.custom-control {
-  display: table;
-  vertical-align: middle;
-}
-
-
-.custom-control-input {
-      display: inline-block;
-      vertical-align: middle;
-      position: relative;
-      top:0;
-    }
