@@ -9,18 +9,18 @@ body {
 }
 
 /* Fix bg images on mobile*/
-.parallax::after{
-      content:"";
-      position:fixed; /* stretch a fixed position to the whole screen */
-      top:0;
-      height:100vh; /* fix for mobile browser address bar appearing disappearing */
-      left:0;
-      right:0;
-      z-index:-1; /* needed to keep in the background */
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){ 
+    .parallax{  
+        background-size: cover !important;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    body {  
+        height:100%;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
 }
 
 a{
@@ -92,37 +92,37 @@ footer{
 
 #entry{
     height: 100vh;
-    background: url(/img/websize/shot-3.jpg);
+    background: url(/img/websize/shot-3.jpg) fixed;
     background-position: 11% 80%;
 }
 
 #img1{
     height: 85vh;
-    background: url(/img/websize/shot-12.jpg);
+    background: url(/img/websize/shot-12.jpg) fixed;
     background-position: 50% 25%;
 }
 
 #img2{
     height: 85vh;
-    background: url(/img/websize/shot-31.jpg);
+    background: url(/img/websize/shot-31.jpg) fixed;
     background-position: 61% 50%;
 }
 
 #img3{
     height: 85vh;
-    background: url(/img/websize/shot-14.jpg);
+    background: url(/img/websize/shot-14.jpg) fixed;
     background-position: 10% 70%;
 }
 
 #img4{
     height: 85vh;
-    background: url(/img/websize/shot-26.jpg);
+    background: url(/img/websize/shot-26.jpg) fixed;
     background-position: 53% 60%;
 }
 
 #img5{
     height: 95vh;
-    background: url(/img/websize/shot-29.jpg);
+    background: url(/img/websize/shot-29.jpg) fixed;
     background-position: 50% 45%;
 }
 
