@@ -9,7 +9,7 @@ body {
 }
 
 /* Fix bg images on mobile*/
-body::after{
+.parallax::after{
       content:"";
       position:fixed; /* stretch a fixed position to the whole screen */
       top:0;
