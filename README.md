@@ -29,4 +29,5 @@ This is my first proper website made from scratch. It's just a static page but I
 
 ## To do
 * Dutch text to match the English page
-* Go live on own domain
+~~* Go live on own domain~~
+* Fix image display on iOS browsers
