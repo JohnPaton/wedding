@@ -6,21 +6,7 @@ html{
 body {
     position: relative;
     background-image: url(/img/pattern.svg);
-}
-
-/* Fix bg images on mobile*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){ 
-    .parallax{  
-        background-size: cover !important;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    body {  
-        height:100%;
-        overflow: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
+    min-width: 300px;
 }
 
 a{
@@ -126,7 +112,29 @@ footer{
     background-position: 50% 45%;
 }
 
+/* Fix bg images on mobile*/
+@media only screen and (max-width: 768px), 
+       only screen and (pointer: coarse), 
+       only screen and (hover: none) { 
 
+    .parallax {  
+        background-size: cover !important;
+        overflow: hidden !important;
+        background-attachment: scroll !important;
+    }
+
+/*    [id^="img*"] {
+        background-size: cover !important;
+        overflow: hidden !important;
+        background-attachment: scroll !important;
+    }
+*/
+/*    body {  
+        height:100%;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }*/
+}
 
 /*Navigation */
 .anchor{
