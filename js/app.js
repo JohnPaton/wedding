@@ -1,8 +1,7 @@
 ////// Options
 
 var underConstruction = true;
-var rsvpDisabled = false;
-var rsvpSubmissionEmail = 'patonkoning2018@gmail.com';
+var rsvpDisabled = true;
 
 
 ////// Util functions
@@ -160,7 +159,7 @@ form.submit(function(event) {
         // submit to Formspree & show error/success message
         console.log('form valid, submitting')
         $.ajax({
-            url: '//formspree.io/'+rsvpSubmissionEmail,
+            url: '//formspree.io/john@johnpaton.net',
             method: 'POST',
             data: form.serialize(),  // url encoding
             // dataType: 'json',
