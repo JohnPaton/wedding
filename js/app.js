@@ -74,7 +74,7 @@ if (rsvpDisabled) {
 // Under contruction message (option: underConstruction)
 var constructionAlert = "<div class=\"alert alert-danger show mt-5\" role=\"alert\">"
     + "<strong>This page is still under construction.</strong> It may contain bugs and/or errors."
-    + "Don't take the info seriously! </div>"
+    + " Don't take the info seriously! </div>"
 if (underConstruction) {
     $('.container-fluid .anchor').after(constructionAlert)
 };
