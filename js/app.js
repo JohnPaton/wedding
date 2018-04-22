@@ -1,6 +1,6 @@
 ////// Options
 
-var underConstruction = true;
+var underConstruction = false;
 var rsvpDisabled = true;
 
 
@@ -159,7 +159,8 @@ form.submit(function(event) {
         // submit to Formspree & show error/success message
         console.log('form valid, submitting')
         $.ajax({
-            url: '//formspree.io/john@johnpaton.net',
+            // url: '//formspree.io/john@johnpaton.net',
+            url: '//formspree.io/patonkoning2018@gmail.com',
             method: 'POST',
             data: form.serialize(),  // url encoding
             // dataType: 'json',
