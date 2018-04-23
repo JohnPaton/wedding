@@ -46,7 +46,7 @@ function scrollToAnchor(hash, offset){
         500, 
         function(){
             // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
+            // window.location.hash = hash;
         });
     };
 };
