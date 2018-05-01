@@ -127,7 +127,7 @@ $(document).ready(function(){
 // https://stackoverflow.com/a/11967638
 $('#rsvpStatus').change(function() {
     var selection = $('#rsvpStatus option:selected')[0].innerHTML;
-    if (selection == "Regret") {
+    if ((selection == "Regret") || (selection == "Wij komen niet")) {
         console.log('Regret, disabling fields')
         $('#rsvpNumber').attr('required', false);
         $('#rsvpNumber').attr('disabled', true);
