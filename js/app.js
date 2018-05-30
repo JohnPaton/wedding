@@ -1,7 +1,7 @@
 ////// Options
 
 var underConstruction = false;
-var rsvpDisabled = true;
+var rsvpDisabled = false;
 
 
 ////// Util functions
