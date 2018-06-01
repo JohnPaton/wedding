@@ -142,45 +142,45 @@ $('#rsvpStatus').change(function() {
 });
 
 
-// Form validation (Bootstrap) and submission to Formspree
-var form = $('#rsvpForm');
-form.submit(function(event) {
-    // prevent default submission behaviour
-    event.preventDefault();
-    event.stopPropagation();
+// // Form validation (Bootstrap) and submission to Formspree
+// var form = $('#rsvpForm');
+// form.submit(function(event) {
+//     // prevent default submission behaviour
+//     event.preventDefault();
+//     event.stopPropagation();
 
-    // Add validation styles
-    form.addClass('was-validated');
+//     // Add validation styles
+//     form.addClass('was-validated');
 
-    if (form[0].checkValidity() == false) {
-        // wait for better input
-        console.log('form invalid')
-    } else {
-        // submit to Formspree & show error/success message
-        console.log('form valid, submitting')
-        $.ajax({
-            // url: '//formspree.io/john@johnpaton.net',
-            url: '//formspree.io/patonkoning2018@gmail.com',
-            method: 'POST',
-            data: form.serialize(),  // url encoding
-            // dataType: 'json',
-            // beforeSend: function() {
-            // },
-            success: function(data) {
-                // Show the message
-                $('#rsvpSuccess').fadeIn();
+//     if (form[0].checkValidity() == false) {
+//         // wait for better input
+//         console.log('form invalid')
+//     } else {
+//         // submit to Formspree & show error/success message
+//         console.log('form valid, submitting')
+//         $.ajax({
+//             // url: '//formspree.io/john@johnpaton.net',
+//             url: '//formspree.io/patonkoning2018@gmail.com',
+//             method: 'POST',
+//             data: form.serialize(),  // url encoding
+//             // dataType: 'json',
+//             // beforeSend: function() {
+//             // },
+//             success: function(data) {
+//                 // Show the message
+//                 $('#rsvpSuccess').fadeIn();
 
-                // freeze form & prevent multiple submissions
-                $('#rsvpSubmit').attr('disabled', true);
-                $('.form-control').each(function(){
-                    $(this).attr('disabled', true);
-                });
-            },
+//                 // freeze form & prevent multiple submissions
+//                 $('#rsvpSubmit').attr('disabled', true);
+//                 $('.form-control').each(function(){
+//                     $(this).attr('disabled', true);
+//                 });
+//             },
 
-            error: function(err) {
-                // Show the message
-                $('#rsvpError').fadeIn();
-            },
-        });
-    };
-});
+//             error: function(err) {
+//                 // Show the message
+//                 $('#rsvpError').fadeIn();
+//             },
+//         });
+//     };
+// });
